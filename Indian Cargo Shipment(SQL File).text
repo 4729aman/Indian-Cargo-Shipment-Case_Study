@@ -1,0 +1,37 @@
+
+
+Database name- Indian CargoTable 
+
+Table name-Clients_Details
+
+-----Create Table-----
+Create table Client_Details
+(
+Client_ID int not null,
+Client_Name varchar(20),
+Client_Last_Name varchar(20),
+Client_Contact varchar(15),
+Client_Alternate_Contact varchar(20),
+Client_Branch_Details varchar(20),
+Client_Address varchar(50),
+Client_Joining_Date Date
+
+Primary key(Client_Id))
+
+
+-----Insert into Table---------------
+
+
+INSERT [Client_Details] ([Client_ID], [Client_Name], [Client_Last_Name], [Client_Contact], [Client_Alternate_Contact], [Client_Branch_Details],[Client_Address],[Client_Joining_Date]) VALUES (102,'Kapil','Sharma',7015342318,9191842235,'New Delhi','sector 49','10 Jan 2010')
+INSERT [Client_Details] ([Client_ID], [Client_Name], [Client_Last_Name], [Client_Contact], [Client_Alternate_Contact], [Client_Branch_Details],[Client_Address],[Client_Joining_Date]) VALUES (103,'Nagmani','Kumar',8085232318,9981142235,'Mumbai',' Near Dadar Station','15 Aug 2021')
+INSERT [Client_Details] ([Client_ID], [Client_Name], [Client_Last_Name], [Client_Contact], [Client_Alternate_Contact], [Client_Branch_Details],[Client_Address],[Client_Joining_Date]) VALUES (104,'Tanbir','Aktar',8085102318,9988842235,'Jharkhand',' near old Bus stand','21 may 1999')
+INSERT [Client_Details] ([Client_ID], [Client_Name], [Client_Last Name], [Client_Contact], [Client_Alternate_Contact], [Client_Branch_Details],[Client_Address],[Client_Joining_Date]) VALUES (105,'Andleep','Nemat',8085342367,9981842895,'Gurugram','sector 19','09 Aug 2007')
+INSERT [Client_Details] ([Client_ID], [Client_Name], [Client_Last_Name], [Client_Contact], [Client_Alternate_Contact], [Client_Branch_Details],[Client_Address],[Client_Joining_Date]) VALUES (106,'Sharooq','Khan',8085342318,9986642235,'Karnataka','Mysore','10 Feb 2018')
+INSERT [Client_Details] ([Client_ID], [Client_Name], [Client_Last_Name], [Client_Contact], [Client_Alternate_Contact], [Client_Branch_Details],[Client_Address],[Client_Joining_Date]) VALUES (107,'Master','Muktar',7785342318,9981772235,'Karnataka','36 siddalingeshvara layout','20 Apr 2001')
+INSERT [Client_Details] ([Client_ID], [Client_Name], [Client_Last_Name], [Client_Contact], [Client_Alternate_Contact], [Client_Branch_Details],[Client_Address],[Client_Joining_Date]) VALUES (108,'Meghna','Sharma',8081242318,9981892235,'Noida','Botanical Garden','19 July 2017')
+INSERT [Client_Details] ([Client_ID], [Client_Name], [Client_Last_Name], [Client_Contact], [Client_Alternate_Contact], [Client_Branch_Details],[Client_Address],[Client_Joining_Date]) VALUES (109,'Muskan','Kimotiya',8085222318,9901842235,'Faridabad','sector 21','31 Aug 2000')
+INSERT [Client_Details] ([Client_ID], [Client_Name], [Client_Last_Name], [Client_Contact], [Client_Alternate_Contact], [Client_Branch_Details],[Client_Address],[Client_Joining_Date]) VALUES (110,'Shivani','Kumari',8067342318,9671842235,'Bhopal','areara hills','16 mar 2015')
+INSERT [Client_Details] ([Client_ID], [Client_Name], [Client_Last_Name], [Client_Contact], [Client_Alternate_Contact], [Client_Branch_Details],[Client_Address],[Client_Joining_Date]) VALUES (111,'Deepak','Raja',8085123318,9980982235,'Chapra','near old Railway Station','14 Aug 2006')
+
+-----Show Table------------
+Select * from Client_Details
