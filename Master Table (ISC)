@@ -1,0 +1,150 @@
+
+
+---------------------------Indian Cargo Shipments (ICS)-------------------------------------------------------------------------
+
+
+
+-----------Create Master Table---------------=
+
+Select *  from Master_ICS
+----------------------------------------------------
+
+Create table Master_ICS
+(
+Client_ID int not null,
+Branch_Location varchar(20),
+Number_of_Employee varchar(20),
+Branch_Contact varchar(20),
+Branch_Address varchar(50),
+Branch_Opening_Date Date,
+
+Client_Name varchar(20),
+Client_Last_Name varchar(20),       
+Client_Contact varchar(15),
+Client_Alternate_Contact varchar(20),
+Client_Branch_Details varchar(20),
+Client_Address varchar(50),
+Client_Joining_Date Date,
+
+Cargo_Id varchar(5),
+Cargo_Categories varchar(20) NULL,
+Cargo_Capacity Varchar(20) NULL,
+Material_Type varchar(30) NULL,
+Container_Details varchar(6),
+Start_Location varchar(20) NULL,
+End_Location varchar(20) NULL,
+
+
+Product_ID int ,
+Delivery_Stage1 varchar(20),
+Delivery_Stage2 varchar(20),
+Delivery_Stage3 varchar(20),
+Delivery_Stage4 varchar(20),
+Client_Payment_Status varchar(20),
+
+Product_Type varchar(50),
+Product_Bill  varchar(50),
+Product_Quantity  varchar(50),
+Product_Recived_Date  date, 
+Product_Deliverd_Date date)
+  
+---------------------Master Table REcords Insertion Part-----------------------  
+
+INSERT  [Master_ICS] ([Client_ID], [Branch_Location], [Number_of_Employee], [Branch_Contact], [Branch_Address],[Branch_Opening_Date]) VALUES ('101','Odisha', 32 ,9887786534,'Pradip Port, Odisha','29 April 2022')
+INSERT  [Master_ICS] ([Client_ID], [Branch_Location], [Number_of_Employee], [Branch_Contact], [Branch_Address],[Branch_Opening_Date]) VALUES ('102','Mumbai', 50 ,8085522630,'JNPT Port,Mumbai','10 Jan 2010')
+INSERT  [Master_ICS] ([Client_ID], [Branch_Location], [Number_of_Employee], [Branch_Contact], [Branch_Address],[Branch_Opening_Date]) VALUES ('103','Kerala', 48 ,8986231949,'Cochin Port, Kerala','15 August 2014')
+INSERT  [Master_ICS] ([Client_ID], [Branch_Location], [Number_of_Employee], [Branch_Contact], [Branch_Address],[Branch_Opening_Date]) VALUES ('104','Gujrat', 52 ,9685754110,'Kandla Port, Gujrat','10 September 2015')
+INSERT  [Master_ICS] ([Client_ID], [Branch_Location], [Number_of_Employee], [Branch_Contact], [Branch_Address],[Branch_Opening_Date]) VALUES ('105','Hyderabad', 40 ,7764024315,'Banjara Hills, Hyderabad','12 Feb 2018')
+INSERT  [Master_ICS] ([Client_ID], [Branch_Location], [Number_of_Employee], [Branch_Contact], [Branch_Address],[Branch_Opening_Date]) VALUES ('106','Delhi', 45 ,8292436909,'Rajiv Chauk, Delhi','22 July 2020')
+INSERT  [Master_ICS] ([Client_ID], [Branch_Location], [Number_of_Employee], [Branch_Contact], [Branch_Address],[Branch_Opening_Date]) VALUES ('107','Kolkata', 43 ,8987146434,'Kolkata Port, West Bengal','29 March 2021')
+INSERT  [Master_ICS] ([Client_ID], [Branch_Location], [Number_of_Employee], [Branch_Contact], [Branch_Address],[Branch_Opening_Date]) VALUES ('108','Bhopal', 38 ,7898654301,'Ayodhya Bypass, Bhopal','4 April 2021')
+INSERT  [Master_ICS] ([Client_ID], [Branch_Location], [Number_of_Employee], [Branch_Contact], [Branch_Address],[Branch_Opening_Date]) VALUES ('109','Patna', 37 ,2244546760,'Boring Road , Patna','29 May 2021')
+INSERT  [Master_ICS] ([Client_ID], [Branch_Location], [Number_of_Employee], [Branch_Contact], [Branch_Address],[Branch_Opening_Date]) VALUES ('110','Gurgaon', 22 ,9887678534,'Udyog Vihar, Gurgaon','29 March 2022')
+
+
+INSERT [Master_ICS] (  [Master_ICS] ([Client_Id], [Branch_Location], [Number_of_Employee], [Branch_Contact], [Branch_Address],[Branch_Opening_Date][Client_Name], [Client_Last_Name], [Client_Contact], [Client_Alternate_Contact], [Client_Branch_Details],[Client_Address],[Client_Joining_Date]) VALUES ('Kapil','Sharma',7015342318,9191842235,'New Delhi','sector 49','10 Jan 2010')
+INSERT [Master_ICS] ([Client_Name], [Client_Last_Name], [Client_Contact], [Client_Alternate_Contact], [Client_Branch_Details],[Client_Address],[Client_Joining_Date]) VALUES ('Nagmani','Kumar',8085232318,9981142235,'Mumbai',' Near Dadar Station','15 Aug 2021')
+INSERT [Master_ICS] ([Client_Name], [Client_Last_Name], [Client_Contact], [Client_Alternate_Contact], [Client_Branch_Details],[Client_Address],[Client_Joining_Date]) VALUES ('Tanbir','Aktar',8085102318,9988842235,'Jharkhand',' near old Bus stand','21 may 1999')
+INSERT [Master_ICS] ([Client_Name], [Client_Last_Name], [Client_Contact], [Client_Alternate_Contact], [Client_Branch_Details],[Client_Address],[Client_Joining_Date]) VALUES ('Andleep','Nemat',8085342367,9981842895,'Gurugram','sector 19','09 Aug 2007')
+INSERT [Master_ICS] ([Client_Name], [Client_Last_Name], [Client_Contact], [Client_Alternate_Contact], [Client_Branch_Details],[Client_Address],[Client_Joining_Date]) VALUES ('Sharooq','Khan',8085342318,9986642235,'Karnataka','Mysore','10 Feb 2018')
+INSERT [Master_ICS] ([Client_Name], [Client_Last_Name], [Client_Contact], [Client_Alternate_Contact], [Client_Branch_Details],[Client_Address],[Client_Joining_Date]) VALUES ('Master','Muktar',7785342318,9981772235,'Karnataka','36 siddalingeshvara layout','20 Apr 2001')
+INSERT [Master_ICS] ([Client_Name], [Client_Last_Name], [Client_Contact], [Client_Alternate_Contact], [Client_Branch_Details],[Client_Address],[Client_Joining_Date]) VALUES ('Meghna','Sharma',8081242318,9981892235,'Noida','Botanical Garden','19 July 2017')
+INSERT [Master_ICS] ([Client_Name], [Client_Last_Name], [Client_Contact], [Client_Alternate_Contact], [Client_Branch_Details],[Client_Address],[Client_Joining_Date]) VALUES ('Muskan','Kimotiya',8085222318,9901842235,'Faridabad','sector 21','31 Aug 2000')
+INSERT [Master_ICS] ([Client_Name], [Client_Last_Name], [Client_Contact], [Client_Alternate_Contact], [Client_Branch_Details],[Client_Address],[Client_Joining_Date]) VALUES ('Shivani','Kumari',8067342318,9671842235,'Bhopal','areara hills','16 mar 2015')
+INSERT [Master_ICS] ([Client_Name], [Client_Last_Name], [Client_Contact], [Client_Alternate_Contact], [Client_Branch_Details],[Client_Address],[Client_Joining_Date]) VALUES ('Deepak','Raja',8085123318,9980982235,'Chapra','near old Railway Station','14 Aug 2006')
+
+
+---------Update Records --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 
+Update Master_ICS set Cargo_Id='CR001',Cargo_Categories='Samll Feeder',Cargo_Capacity='upto 10000 -TEU',Material_Type='Metals',Container_Details='MT-01',Start_Location='Mumbai',End_Location='South Africa' where Client_Id=101;
+Update Master_ICS set Client_Name='Andleeb',Client_Last_Name='Nemat',Client_Contact='8292436909',Client_Alternate_Contact='8987146434',Client_Branch_Details='Gujrat',Client_Address='Bhavnagar Gujrat',Client_Joining_Date= '20/11/1999' where Client_Id=102;
+Update Master_ICS set Client_Name='Rajesh',Client_Last_Name='Kumar',Client_Contact='7764024315',Client_Alternate_Contact='7764031454',Client_Branch_Details='Mumbai',Client_Address='JNPT Mumbai',Client_Joining_Date='01/01/2000' where Client_Id=103;
+Update Master_ICS set Client_Name='Tanvir',Client_Last_Name='Akhtar',Client_Contact='3246543785',Client_Alternate_Contact='7498478209',Client_Branch_Details='Kerala',Client_Address='Cochin Port',Client_Joining_Date='05/08/2003' where Client_Id=104;
+Update Master_ICS set Client_Name='Shadab',Client_Last_Name='Alam',Client_Contact='6481648303',Client_Alternate_Contact='9845920521',Client_Branch_Details='Karnatka',Client_Address='New Mangaloru port',Client_Joining_Date='04/09/2006' where Client_Id=105;
+Update Master_ICS set Client_Name='Mohammad',Client_Last_Name='Irshad',Client_Contact='9483617402',Client_Alternate_Contact='21665239860',Client_Branch_Details='Goa',Client_Address='Mormugao Port Goa',Client_Joining_Date='23/12/2005' where Client_Id=106;
+Update Master_ICS set Client_Name='Mohammad',Client_Last_Name='Mukthar',Client_Contact='8844036107',Client_Alternate_Contact='0535993507',Client_Branch_Details='Tamilnadu',Client_Address='Chennai Port Tamilnadu',Client_Joining_Date='5/11/2002' where Client_Id=107;
+Update Master_ICS set Client_Name='Mohammad',Client_Last_Name='Sharooq',Client_Contact='4376897620',Client_Alternate_Contact='8754628592',Client_Branch_Details='Andhra Pradesh',Client_Address='Vizag Andhra Pardesh',Client_Joining_Date='25/10/1998' where Client_Id=108;
+Update Master_ICS set Client_Name='Mohd',Client_Last_Name='Ahmad',Client_Contact='8790986754',Client_Alternate_Contact='3254708725',Client_Branch_Details='Orissa',Client_Address='Balasore Orissa',Client_Joining_Date='04/04/2000' where Client_Id=109;
+Update Master_ICS set Client_Name='Randheer',Client_Last_Name='Kumar',Client_Contact='4321768907',Client_Alternate_Contact='8767543245',Client_Branch_Details='West Bengal',Client_Address='Haldia West Bengal',Client_Joining_Date='29/03/2001' where Client_Id=110;
+
+
+
+
+Update Master_ICS set Client_Name='Mohammad',Client_Last_Name='Irshad',Client_Contact='9483617402',Client_Alternate_Contact='21665239860',Client_Branch_Details='Goa',Client_Address='Mormugao Port Goa',Client_Joining_Date='2005/11/12' where Client_Id=106;
+Update Master_ICS set Client_Name='Mohammad',Client_Last_Name='Mukthar',Client_Contact='8844036107',Client_Alternate_Contact='0535993507',Client_Branch_Details='Tamilnadu',Client_Address='Chennai Port Tamilnadu',Client_Joining_Date='2002/5/11' where Client_Id=107;
+Update Master_ICS set Client_Name='Mohammad',Client_Last_Name='Sharooq',Client_Contact='4376897620',Client_Alternate_Contact='8754628592',Client_Branch_Details='Andhra Pradesh',Client_Address='Vizag Andhra Pardesh',Client_Joining_Date='1998/08/10' where Client_Id=108;
+Update Master_ICS set Client_Name='Mohd',Client_Last_Name='Ahmad',Client_Contact='8790986754',Client_Alternate_Contact='3254708725',Client_Branch_Details='Orissa',Client_Address='Balasore Orissa',Client_Joining_Date='2000/04/04' where Client_Id=109;
+Update Master_ICS set Client_Name='Randheer',Client_Last_Name='Kumar',Client_Contact='4321768907',Client_Alternate_Contact='8767543245',Client_Branch_Details='West Bengal',Client_Address='Haldia West Bengal',Client_Joining_Date='2001/03/29' where Client_Id=110;
+
+[17:32] Mohammed Mukthar
+Update Master_ICS set Cargo_Id='CR001',Cargo_Categories='Samll Feeder',Cargo_Capacity='upto 1000 -TEU',Material_Type='Metals',Container_Details='MT-01',Start_Location='Mumbai',End_Location='South Africa' where Client_Id=101;
+Update Master_ICS set Cargo_Id='CR002',Cargo_Categories='Feeder',Cargo_Capacity='1001-2000 -TEU',Material_Type='Electronics',Container_Details='ET-01',Start_Location='Kolkata',End_Location='Brazil' where Client_Id=102;
+Update Master_ICS set Cargo_Id='CR003',Cargo_Categories='Feedermax',Cargo_Capacity='2001-3000 -TEU',Material_Type='Steel',Container_Details='ST-01',Start_Location='Kandla',End_Location='Sweden' where Client_Id=103
+Update Master_ICS set Cargo_Id='CR004',Cargo_Categories='Panamax',Cargo_Capacity='3001-5100-TEU',Material_Type='Sanatries Products',Container_Details='SP-01',Start_Location='Cochin',End_Location='Canada' where Client_Id=104;
+Update Master_ICS set Cargo_Id='CR005',Cargo_Categories='Post Panamax',Cargo_Capacity='5101-10000-TEU',Material_Type='Vehicles',Container_Details='VEH-01',Start_Location='Panambur',End_Location='Jubail' where Client_Id=105;
+Update Master_ICS set Cargo_Id='CR006',Cargo_Categories='Neopanamax',Cargo_Capacity='10000-14500 -TEU',Material_Type='Oils',Container_Details='O-01',Start_Location='Ennore',End_Location='South Africa' where Client_Id=106;
+Update Master_ICS set Cargo_Id='CR007',Cargo_Categories='ULCV',Cargo_Capacity='14501- 20000 TEU',Material_Type='Foods',Container_Details='FD-01',Start_Location='Vizag',End_Location='North America' where Client_Id=107;
+Update Master_ICS set Cargo_Id='CR008',Cargo_Categories='Samll Feeder',Cargo_Capacity='upto 1000 -TEU',Material_Type='Iron and Iron ore',Container_Details='IRN-01',Start_Location='Ennore',End_Location='Al Hamriya' where Client_Id=108;
+Update Master_ICS set Cargo_Id='CR009',Cargo_Categories='Feeder',Cargo_Capacity='1001-2000 -TEU',Material_Type='Medicines and Surgicals',Container_Details='MD-01',Start_Location='Port Blair',End_Location='Durban' where Client_Id=109;
+Update Master_ICS set Cargo_Id='CR010',Cargo_Categories='Panamax',Cargo_Capacity='3001-5100-TEU',Material_Type='Textile',Container_Details='TX-01',Start_Location='Tuticorin',End_Location='Tianjin' where Client_Id=110;
+
+[17:36] Mahammad Sharooq
+Update Master_ICS set Product_ID='1111',Delivery_Stage1='Recived',Delivery_Stage2='Dispatched',Delivery_Stage3='On the way',Delivery_Stage4='Deliverd',Client_Payment_Status='Paid' where Client_Id=102;
+Update Master_ICS set Product_ID='1112',Delivery_Stage1='Recived',Delivery_Stage2='Dispatched',Delivery_Stage3='-',Delivery_Stage4='-',Client_Payment_Status='to pay' where Client_Id=103;
+Update Master_ICS set Product_ID='1113',Delivery_Stage1='Recived',Delivery_Stage2='-',Delivery_Stage3='-',Delivery_Stage4='-',Client_Payment_Status='Paid' where Client_Id=104;
+Update Master_ICS set Product_ID='1114',Delivery_Stage1='Recived',Delivery_Stage2='Dispatched',Delivery_Stage3='On the way',Delivery_Stage4='-',Client_Payment_Status='To Pay' where Client_Id=105;
+Update Master_ICS set Product_ID='1115',Delivery_Stage1='Recived',Delivery_Stage2='Dispatched',Delivery_Stage3='-',Delivery_Stage4='-',Client_Payment_Status='To Pay' where Client_Id=106;
+Update Master_ICS set Product_ID='1116',Delivery_Stage1='Recived',Delivery_Stage2='Dispatched',Delivery_Stage3='On the way',Delivery_Stage4='Deliverd',Client_Payment_Status='To Pay' where Client_Id=107;
+Update Master_ICS set Product_ID='1117',Delivery_Stage1='Recived',Delivery_Stage2='Dispatched',Delivery_Stage3='On the way',Delivery_Stage4='-',Client_Payment_Status='To Pay' where Client_Id=108;
+Update Master_ICS set Product_ID='1118',Delivery_Stage1='Recived',Delivery_Stage2='Dispatched',Delivery_Stage3='-',Delivery_Stage4='-',Client_Payment_Status='To Pay' where Client_Id=109;
+Update Master_ICS set Product_ID='1119',Delivery_Stage1='Recived',Delivery_Stage2='Dispatched',Delivery_Stage3='-',Delivery_Stage4='-',Client_Payment_Status='Paid' where Client_Id=110;
+
+
+[17:55] Mahammad Sharooq
+Update Master_ICS set Product_Type='oil',Product_Bill='approved',Product_Quantity='10 Barrel',Product_Recived_Date='2022-05-08 ',Product_Deliverd_Date='2022-06-13' where Client_Id=101;
+Update Master_ICS set Product_Type='Metal',Product_Bill='Pending',Product_Quantity='12 container',Product_Recived_Date='2022-06-03',Product_Deliverd_Date='2022-07-23' where Client_Id=10;
+Update Master_ICS set Product_Type='Electronics',Product_Bill='approved',Product_Quantity='6 container',Product_Recived_Date='2022-05-08',Product_Deliverd_Date='2022-06-28' where Client_Id=103;
+Update Master_ICS set Product_Type='oil',Product_Bill='Pending',Product_Quantity=' 3 Barrel',Product_Recived_Date='2022-06-08',Product_Deliverd_Date='2022-07-18' where Client_Id=104;
+Update Master_ICS set Product_Type='Metal',Product_Bill='approved',Product_Quantity='5 container',Product_Recived_Date='2022-05-08',Product_Deliverd_Date='2022-06-23' where Client_Id=105;
+Update Master_ICS set Product_Type='Metal',Product_Bill='approved',Product_Quantity='6 container',Product_Recived_Date='2022-05-07',Product_Deliverd_Date='2022-06-23' where Client_Id=106;
+Update Master_ICS set Product_Type='oil',Product_Bill='Pending',Product_Quantity=' 15 Barrel',Product_Recived_Date='2022-05-02',Product_Deliverd_Date='2022-05-26' where Client_Id=107;
+Update Master_ICS set Product_Type='Metal',Product_Bill='Pending',Product_Quantity='2 container',Product_Recived_Date='2022-05-01',Product_Deliverd_Date='2022-06-28' where Client_Id=108;
+Update Master_ICS set Product_Type='Electronics',Product_Bill='approved',Product_Quantity='5 container',Product_Recived_Date='2022-05-08',Product_Deliverd_Date='2022-06-29' where Client_Id=109;
+
+
+
+
+[17:55] Mahammad Sharooq
+Update Master_ICS set Product_Type='oil',Product_Bill='approved',Product_Quantity='10 Barrel',Product_Recived_Date='2022-05-08 ',Product_Deliverd_Date='2022-06-13' where Client_Id=101;
+Update Master_ICS set Product_Type='Metal',Product_Bill='Pending',Product_Quantity='12 container',Product_Recived_Date='2022-06-03',Product_Deliverd_Date='2022-07-23' where Client_Id=102;
+Update Master_ICS set Product_Type='Electronics',Product_Bill='approved',Product_Quantity='6 container',Product_Recived_Date='2022-05-08',Product_Deliverd_Date='2022-06-28' where Client_Id=103;
+Update Master_ICS set Product_Type='oil',Product_Bill='Pending',Product_Quantity=' 3 Barrel',Product_Recived_Date='2022-06-08',Product_Deliverd_Date='2022-07-18' where Client_Id=104;
+Update Master_ICS set Product_Type='Metal',Product_Bill='approved',Product_Quantity='5 container',Product_Recived_Date='2022-05-08',Product_Deliverd_Date='2022-06-23' where Client_Id=105;
+Update Master_ICS set Product_Type='Metal',Product_Bill='approved',Product_Quantity='6 container',Product_Recived_Date='2022-05-07',Product_Deliverd_Date='2022-06-23' where Client_Id=106;
+Update Master_ICS set Product_Type='oil',Product_Bill='Pending',Product_Quantity=' 15 Barrel',Product_Recived_Date='2022-05-02',Product_Deliverd_Date='2022-05-26' where Client_Id=107;
+Update Master_ICS set Product_Type='Metal',Product_Bill='Pending',Product_Quantity='2 container',Product_Recived_Date='2022-05-01',Product_Deliverd_Date='2022-06-28' where Client_Id=108;
+Update Master_ICS set Product_Type='Electronics',Product_Bill='approved',Product_Quantity='5 container',Product_Recived_Date='2022-05-08',Product_Deliverd_Date='2022-06-29' where Client_Id=109;
+Update Master_ICS set Product_Type='Metal',Product_Bill='approved',Product_Quantity='10 container',Product_Recived_Date='2022-07-09',Product_Deliverd_Date='2022-06-29' where Client_Id=110;
+
+
+
